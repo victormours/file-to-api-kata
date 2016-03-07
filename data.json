@@ -1,0 +1,54 @@
+{
+  "movies":[
+    {
+      "id":1,
+      "title":"The Gold Rush",
+      "year":1925,
+      "director_id":1
+    },
+    {
+      "id":2,
+      "title":"City Lights",
+      "year":1931,
+      "director_id":1
+    },
+    {
+      "id":3,
+      "title":"The General",
+      "year":1926,
+      "director_id":3
+    },
+    {
+      "id":4,
+      "title":"Modern Times",
+      "year":1936,
+      "director_id":1
+    },
+    {
+      "id":5,
+      "title":"Vertigo",
+      "year":1958,
+      "director_id":2
+    },
+    {
+      "id":6,
+      "title":"Psycho",
+      "year":1960,
+      "director_id":2
+    }
+  ],
+  "directors":[
+    {
+      "id":1,
+      "name":"Charlie Chaplin"
+    },
+    {
+      "id":2,
+      "name":"Alfred Hitchcock"
+    },
+    {
+      "id":3,
+      "name":"Buster Keaton"
+    }
+  ]
+}
