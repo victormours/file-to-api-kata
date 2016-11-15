@@ -2,7 +2,10 @@ GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.2.5)
+    mustermann (1.0.0.beta2)
     rack (2.0.1)
+    rack-protection (2.0.0.beta2)
+      rack
     rack-test (0.6.3)
       rack (>= 1.0)
     rspec (3.5.0)
@@ -18,6 +21,12 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
+    sinatra (2.0.0.beta2)
+      mustermann (= 1.0.0.beta2)
+      rack (~> 2.0)
+      rack-protection (= 2.0.0.beta2)
+      tilt (~> 2.0)
+    tilt (2.0.5)
 
 PLATFORMS
   ruby
@@ -25,6 +34,7 @@ PLATFORMS
 DEPENDENCIES
   rack-test
   rspec
+  sinatra (= 2.0.0.beta2)
 
 BUNDLED WITH
    1.12.5
