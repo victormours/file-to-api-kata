@@ -29,4 +29,9 @@ RSpec.describe Api do
     expect(last_response.body).to include("The Gold Rush")
   end
 
+  it 'returns the year of the movie' do
+  	get 'app/movie/2'
+  	expect(last_response.body).to include("2016")
+  end
+
 end

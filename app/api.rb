@@ -9,7 +9,7 @@ class Api < Sinatra::Base
 	end
 
   get '/app/movie/1' do
+  	File.read('data.json')
   end
-
 
 end
