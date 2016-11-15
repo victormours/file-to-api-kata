@@ -11,7 +11,7 @@ class Api < Sinatra::Base
   get '/app/movie/:id' do
   	json_file = File.read('data.json')
   	json_parsed = JSON.parse(json_file)
-  	json_parsed["movies"][0]
+    json_parsed["movies"][0].to_json
   end
 
 end
