@@ -8,5 +8,8 @@ class Api < Sinatra::Base
 		"hello world!"
 	end
 
+  get '/app/movie/1' do
+  end
+
 
 end

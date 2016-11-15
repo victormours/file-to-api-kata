@@ -16,12 +16,17 @@ RSpec.describe Api do
 
   it 'returns a failed response' do
   	get '/app/data'
-  	expect(last_response.status).to eq 404 
+  	expect(last_response.status).to eq 404
   end
 
   it 'return a movie' do
   	get 'app/movie/1'
   	expect(last_response).to be_ok
+  end
+
+  it 'returns the name of the movie' do
+    get 'app/movie/1'
+    expect(last_response.body).to include("The Gold Rush")
   end
 
 end
