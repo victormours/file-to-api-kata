@@ -36,9 +36,9 @@ RSpec.describe Api do
 
   it 'returns the year as part of a json structure' do
     get 'app/movie/1'
-    parsed_response = JSON.parse(last_response.body)
     require 'pry'; binding.pry;
-    expect(parsed_response["year"]).to eq("1931")
+    parsed_response = JSON.parse(last_response.body)
+    expect(parsed_response["year"]).to eq("1925")
   end
 
 end
