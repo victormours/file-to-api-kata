@@ -31,7 +31,14 @@ RSpec.describe Api do
 
   it 'returns the year of the movie' do
   	get 'app/movie/2'
-  	expect(last_response.body).to include("2016")
+  	expect(last_response.body).to include("1931")
+  end
+
+  it 'returns the year as part of a json structure' do
+    get 'app/movie/1'
+    parsed_response = JSON.parse(last_response.body)
+    require 'pry'; binding.pry;
+    expect(parsed_response["year"]).to eq("1931")
   end
 
 end
